@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherry & Ed – 1985</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f3ed;
+            color: #2d2d2d;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 50px;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .album-cover {
+            flex-shrink: 0;
+        }
+
+        .album-cover img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .title-section {
+            flex: 1;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .description {
+            font-size: 1.15rem;
+            color: #4a4a4a;
+            line-height: 1.7;
+        }
+
+        .tracklist {
+            margin-top: 20px;
+        }
+
+        .track {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .track-header {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 14px;
+            gap: 12px;
+        }
+
+        .track-number {
+            font-size: 1rem;
+            color: #888;
+            font-weight: 500;
+            min-width: 24px;
+        }
+
+        .track-title {
+            font-size: 1.3rem;
+            color: #1a1a1a;
+            font-weight: 500;
+            flex: 1;
+        }
+
+        audio {
+            width: 100%;
+            height: 72px;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        /* Improve audio control visibility */
+        audio::-webkit-media-controls-panel {
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #e0ddd3;
+            font-size: 0.95rem;
+            color: #888;
+        }
+
+        /* Desktop adjustments */
+        @media (min-width: 768px) {
+            body {
+                padding: 40px 20px;
+            }
+
+            .container {
+                padding: 30px 0;
+            }
+
+            .header-content {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 32px;
+            }
+
+            .album-cover img {
+                width: 220px;
+                height: 220px;
+            }
+
+            .title-section {
+                text-align: left;
+                padding-top: 8px;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .description {
+                font-size: 1.2rem;
+            }
+
+            .track {
+                padding: 24px;
+            }
+
+            .track-title {
+                font-size: 1.4rem;
+            }
+
+            audio {
+                height: 80px;
+            }
+        }
+
+        /* Ensure good contrast and touch targets */
+        @media (hover: hover) {
+            .track:hover {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="album-cover">
+                    <img src="cover.jpg" alt="Sherry and Ed, 1985">
+                </div>
+                <div class="title-section">
+                    <h1>Sherry & Ed</h1>
+                    <p class="subtitle">Folk & Singer-Songwriter · 1985</p>
+                    <p class="description">
+                        These recordings are treasured family memories from 1985, lovingly digitized 
+                        and shared. Five songs that capture a moment in time.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <div class="tracklist">
+            <div class="track">
+                <div class="track-header">
+                    <span class="track-number">1</span>
+                    <h2 class="track-title">Atlanta's Burning Down</h2>
+                </div>
+                <audio controls preload="metadata">
+                    <source src="01-atlantas-burning-down.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="track">
+                <div class="track-header">
+                    <span class="track-number">2</span>
+                    <h2 class="track-title">Fire and Rain</h2>
+                </div>
+                <audio controls preload="metadata">
+                    <source src="02-fire-and-rain.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="track">
+                <div class="track-header">
+                    <span class="track-number">3</span>
+                    <h2 class="track-title">For the Good Times</h2>
+                </div>
+                <audio controls preload="metadata">
+                    <source src="03-for-the-good-times.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="track">
+                <div class="track-header">
+                    <span class="track-number">4</span>
+                    <h2 class="track-title">Solitary Man</h2>
+                </div>
+                <audio controls preload="metadata">
+                    <source src="04-solitary-man.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="track">
+                <div class="track-header">
+                    <span class="track-number">5</span>
+                    <h2 class="track-title">Waitin' for You</h2>
+                </div>
+                <audio controls preload="metadata">
+                    <source src="05-waitin-for-you.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <footer>
+            <p>Digitized with love · 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
